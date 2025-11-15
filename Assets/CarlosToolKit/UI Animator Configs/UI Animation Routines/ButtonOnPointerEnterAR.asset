@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 814570360cfe8644e9798241f214e17d, type: 3}
+  m_Name: ButtonOnPointerEnterAR
+  m_EditorClassIdentifier: 
+  executionMode: 0
+  animations:
+  - {fileID: 11400000, guid: f1c4b38c572d7a24c9bcd43477315e92, type: 2}
+  - {fileID: 11400000, guid: 971267d8d8dffbe43afa7f66c0b161d1, type: 2}

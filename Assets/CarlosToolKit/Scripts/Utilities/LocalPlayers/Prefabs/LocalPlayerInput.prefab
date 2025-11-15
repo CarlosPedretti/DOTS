@@ -1,0 +1,354 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6897409277104458798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6924467055846341889}
+  - component: {fileID: 6651944669768038788}
+  - component: {fileID: 691077619078784142}
+  m_Layer: 0
+  m_Name: LocalPlayerInput
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6924467055846341889
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6897409277104458798}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7605742640321197706}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6651944669768038788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6897409277104458798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c249589451afc84458c93a6f41f4597b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showDebugs: 1
+  initialConfig:
+    ModifyCurrentActionMap: 0
+    ActionMapChangeMode: 0
+    ModifyCurrentMapActions: 0
+    ActionState: 0
+    IgnoredActions: []
+    ActionMapToSwitch: 
+    ActionsMapsToEnableOrDisable: []
+  currentControlScheme: 
+  currentlyEnabledActionMaps: []
+  currentlyEnabledActions: []
+--- !u!114 &691077619078784142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6897409277104458798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 9880fcfdcdd80af4a80f50313ef9e884,
+    type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 2758712301642092253}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Utilities.Input.BaseLocalInput, Assembly-CSharp
+        m_MethodName: OnControlSchemeChangedHandler
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a2d8c64c-bfa9-4d83-a27f-1e19a7cdc019
+    m_ActionName: 'UI Menu/Username[/Keyboard/n]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 9cdc1355-4235-4211-827d-5fbedf0357aa
+    m_ActionName: 'UI Menu/Garage[/Keyboard/d,/Keyboard/a,/Keyboard/rightArrow,/Keyboard/leftArrow]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Utilities.Input.LocalPlayerInput, Assembly-CSharp
+        m_MethodName: OnAccelerateEvent
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 11a9ddb3-ebe8-4c7d-bece-e668344eba17
+    m_ActionName: 'Vehicle/Accelerate[/Keyboard/w]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Utilities.Input.LocalPlayerInput, Assembly-CSharp
+        m_MethodName: OnHandbrakeEvent
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 60d65d33-1ef2-47ad-abb9-dec801851a6d
+    m_ActionName: 'Vehicle/Handbrake[/Keyboard/space]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Utilities.Input.LocalPlayerInput, Assembly-CSharp
+        m_MethodName: OnHornEvent
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 3a917c39-a682-4c20-9688-b3a7b6fd29f2
+    m_ActionName: 'Vehicle/Horn[/Keyboard/g]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Utilities.Input.LocalPlayerInput, Assembly-CSharp
+        m_MethodName: OnLightsEvent
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 4af74e4c-9dd0-4d92-b733-41a6fa4f1c10
+    m_ActionName: 'Vehicle/Lights[/Keyboard/f]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Utilities.Input.LocalPlayerInput, Assembly-CSharp
+        m_MethodName: OnSirensEvent
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: e6a84a54-868e-461a-908f-553547e28d24
+    m_ActionName: 'Vehicle/Sirens[/Keyboard/ctrl]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Utilities.Input.LocalPlayerInput, Assembly-CSharp
+        m_MethodName: OnCameraEvent
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 228b0268-7918-463d-bff0-f75935b99402
+    m_ActionName: 'Vehicle/Camera[/Mouse/delta]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Utilities.Input.LocalPlayerInput, Assembly-CSharp
+        m_MethodName: OnChangeCameraEvent
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 91a01ac1-5e11-4a41-be66-bce177185d0e
+    m_ActionName: 'Vehicle/Change Camera[/Keyboard/c]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f41d2f4d-d13f-46d0-b7db-f3efaed1c8dd
+    m_ActionName: 'UI/Esc[/Keyboard/escape]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: cd6b3b6d-61b8-45b9-a413-7ad3d4beeca5
+    m_ActionName: 'UI/Mouse[/Mouse/delta]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 78afc4b6-4681-499c-80e6-6fab3d58535c
+    m_ActionName: 'UI/Radio[/Keyboard/r]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: f1e7ca49-d31c-46ea-b974-0198f0107106
+    m_ActionName: 'Player/Toggle Map[/Keyboard/m]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 662cb108-2250-4ff6-ad54-fafe785b8b7d
+    m_ActionName: 'Player/Zoom Map[/Keyboard/n]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: b18dc26a-92e9-4132-878b-4ffd76b7a92c
+    m_ActionName: 'Player/Resume[/Keyboard/escape]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 033a07fe-0fb1-49b7-ac8d-9111e7bb9779
+    m_ActionName: 'Player/Mouse[/Mouse/delta]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ab0d3541-8506-485d-8771-c01dd89b4ca5
+    m_ActionName: 'Player/Store[/Keyboard/b]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8df786e4-a24c-425d-bada-3f35154ff884
+    m_ActionName: 'Player/Radio[/Keyboard/r]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3ac5f6b4-ae74-4bb5-b1c0-5b6ba3c6996c
+    m_ActionName: 'Player/Skill[/Keyboard/e]'
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: UI
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!1 &7902412945980346112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7605742640321197706}
+  - component: {fileID: 6695137064824946786}
+  - component: {fileID: 2758712301642092253}
+  m_Layer: 0
+  m_Name: MultiplayerEventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7605742640321197706
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7902412945980346112}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -960, y: -540, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6924467055846341889}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6695137064824946786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7902412945980346112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b16c6f78230fa4964a222622d8aae332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+  m_PlayerRoot: {fileID: 0}
+--- !u!114 &2758712301642092253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7902412945980346112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: 9880fcfdcdd80af4a80f50313ef9e884,
+    type: 3}
+  m_PointAction: {fileID: -7680468001344815408, guid: 9880fcfdcdd80af4a80f50313ef9e884,
+    type: 3}
+  m_MoveAction: {fileID: -1255517954474356865, guid: 9880fcfdcdd80af4a80f50313ef9e884,
+    type: 3}
+  m_SubmitAction: {fileID: -5864266917830121544, guid: 9880fcfdcdd80af4a80f50313ef9e884,
+    type: 3}
+  m_CancelAction: {fileID: -6966409479811808571, guid: 9880fcfdcdd80af4a80f50313ef9e884,
+    type: 3}
+  m_LeftClickAction: {fileID: 8871786436640765808, guid: 9880fcfdcdd80af4a80f50313ef9e884,
+    type: 3}
+  m_MiddleClickAction: {fileID: 7097887177319614961, guid: 9880fcfdcdd80af4a80f50313ef9e884,
+    type: 3}
+  m_RightClickAction: {fileID: -3963491873844779057, guid: 9880fcfdcdd80af4a80f50313ef9e884,
+    type: 3}
+  m_ScrollWheelAction: {fileID: -3998470927256156418, guid: 9880fcfdcdd80af4a80f50313ef9e884,
+    type: 3}
+  m_TrackedDevicePositionAction: {fileID: 5007038103342495359, guid: 9880fcfdcdd80af4a80f50313ef9e884,
+    type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 588697413866385667, guid: 9880fcfdcdd80af4a80f50313ef9e884,
+    type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6

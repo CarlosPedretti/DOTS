@@ -1,0 +1,43 @@
+Mesh deformer user instructions:
+1.	Import package to project.
+2.	Choose an object with a mesh filter component and collider
+3.	Add MeshDeformer as a new component to chosen object
+4.	(optional) Add objects to ignore deformation with to ignoreObjects list
+5.	Test default settings (by having an object collide with chosen object)
+6.	Tweak settings based on below criteria
+7.	Repeat #5 until desired result
+
+
+Mesh deformer tweak criteria:
+
+Issue 1: Start time is long, deform time is good
+
+	Cure 1: Increase ‘Max Verts Per Chunk’ value.
+	Cure 2: Do not use chunking
+
+Issue 2: Start time is good, deform time is long
+
+	Cure 1: Enable 'Use Chunking'
+	Cure 2: Reduce ‘Max Verts Per Chunk’ value.
+	Cure 3: Disable 'Update Mesh Collider'
+	Cure 4: Check mesh vertex count, may be too large to deform.
+
+Issue 3: Start time is long, deform time is long
+
+	Cure 1: Check mesh vertex count, may be too large to deform.
+
+Issue 4: There is no deformation
+
+	Cure 1: Reduce ‘Min Collision Velocity’.
+	Cure 2: Increase ‘Max Collision Velocity’.
+	Cure 4: Increase ‘Deformation Magnitude Scale’.
+
+Issue 5: The deformation is too small
+
+	Cure 1: Increase ‘Max Collision Velocity’.
+	Cure 2: Increase ‘Deformation Magnitude Scale’.
+
+Issue 6: The deformation is too large
+
+	Cure 1: Reduce ‘Max Collision Velocity’ Y value.
+	Cure 2: Reduce ‘Deformation Magnitude Scale’.

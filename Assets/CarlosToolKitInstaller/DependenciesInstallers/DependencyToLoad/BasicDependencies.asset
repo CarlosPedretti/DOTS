@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98f8c19cdcf215f4e93e04ab4ea469c6, type: 3}
+  m_Name: BasicDependencies
+  m_EditorClassIdentifier: 
+  dependencies:
+  - DisplayName: Unity UI
+    PackageName: com.unity.ugui
+    Source: com.unity.ugui
+    Version: Latest
+    Link: https://docs.unity3d.com/Packages/com.unity.ugui@2.0/manual/index.html
+    InstallMethod: 0
+  - DisplayName: DOTween
+    PackageName: DOTween
+    Source: 
+    Version: Latest
+    Link: https://assetstore.unity.com/packages/tools/animation/dotween-hotween-v2-27676
+    InstallMethod: 2
+  - DisplayName: NuGetForUnity
+    PackageName: com.github-glitchenzo.nugetforunity
+    Source: https://github.com/GlitchEnzo/NuGetForUnity.git?path=/src/NuGetForUnity
+    Version: Latest
+    Link: https://github.com/GlitchEnzo/NuGetForUnity
+    InstallMethod: 1
+  - DisplayName: New Input System
+    PackageName: com.unity.inputsystem
+    Source: com.unity.inputsystem
+    Version: Latest
+    Link: https://docs.unity3d.com/Packages/com.unity.inputsystem@latest
+    InstallMethod: 0
+  - DisplayName: Splines
+    PackageName: com.unity.splines
+    Source: com.unity.splines
+    Version: Latest
+    Link: https://docs.unity3d.com/Packages/com.unity.splines@1.0/manual/getting-started-with-splines.html
+    InstallMethod: 0
+  - DisplayName: ' Steam Audio'
+    PackageName: SteamAudio
+    Source: 
+    Version: Latest
+    Link: https://github.com/ValveSoftware/steam-audio/tree/master/unity
+    InstallMethod: 4
+  - DisplayName: Unified Universal Blur
+    PackageName: Unified-Universal-Blur
+    Source: 
+    Version: Latest
+    Link: https://github.com/lukakldiashvili/Unified-Universal-Blur
+    InstallMethod: 4
