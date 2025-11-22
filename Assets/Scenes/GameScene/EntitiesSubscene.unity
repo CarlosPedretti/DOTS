@@ -622,6 +622,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Soldier
       objectReference: {fileID: 0}
+    - target: {fileID: 6693159105713759270, guid: a1df22acf331f0749a3ece18ff476197, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8952854994458169309, guid: a1df22acf331f0749a3ece18ff476197, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.7

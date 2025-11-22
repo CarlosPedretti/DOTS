@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
+  - component: {fileID: 330585548}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -256,6 +257,34 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &330585548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d60fe6e3ac659854388b967d3a7f25cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoCatchCamera: 1
+  mainCam: {fileID: 0}
+  gameView: 0
+  activationDirection: 1
+  xRangeTwoD: {x: -0.1, y: 1.1}
+  runEveryFrames: 0
+  rotationMaxSpeed: 10
+  cullInScene: 1
+  preventCullingCloseObjects: 1
+  closeObjectsDistance: 5
+  distanceCulling: 0
+  distanceToCull: 0
+  prioritizeDistanceCulling: 0
+  distanceCullingOnly: 0
+  minFrames: 1
+  maxFrames: 10
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
